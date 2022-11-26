@@ -1,0 +1,22 @@
+create table EmployeeDetails(
+Emp_Id int NOT NULL,
+full_name varchar(30),
+manager_id int NOT NULL,
+date_of_joining varchar(30),
+city varchar(30)
+
+);
+
+CREATE TABLE EmployeeSalary (
+  EmpId int,
+  Project varchar(30),
+  Salary int,
+  Variable int
+);
+INSERT INTO EmployeeDetails VALUES (121,'John Snow',321,'31/01/2014','Toronto');
+INSERT INTO EmployeeDetails VALUES (321,'Walter White',986,'30/01/2015','California');
+INSERT INTO EmployeeDetails VALUES (421,'Kuldeep Rana',876,'27/11/2016','New Delhi');
+
+INSERT INTO EmployeeSalary VALUES(121,'P1',8000,500);
+INSERT INTO EmployeeSalary VALUES(321,'P2',10000,1000);
+INSERT INTO EmployeeSalary VALUES(421,'P3',12000,0);
