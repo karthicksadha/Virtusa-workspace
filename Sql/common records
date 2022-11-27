@@ -1,0 +1,3 @@
+SELECT * FROM EmployeeSalary
+INTERSECT
+SELECT * FROM ManagerSalary;
