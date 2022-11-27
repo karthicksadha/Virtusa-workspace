@@ -1,0 +1,32 @@
+import java.util.*;
+public class Adam_number {
+	static int rev(int n) {
+		int rev=0;
+		while(n>0) {
+	        rev=rev*10+n%10;
+	        n=n/10;
+		}
+		return rev;
+	}
+	static void isAdam(int n) {
+		int a=n*n;
+		int b=rev(rev(n)*rev(n));
+		if(a==b) {
+			System.out.println("Its a Adam number");
+		}
+		else {
+			System.out.println("Its Not a adam number");
+		}
+	}
+	
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int s=sc.nextInt();
+	    isAdam(s);
+		
+	}
+
+	
+	}
+
+

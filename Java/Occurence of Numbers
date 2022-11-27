@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class OccurenceOfNumber {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int s=sc.nextInt();
+        int arr[]=new int[10];
+        for(int i=0;i<10;i++) {
+        	arr[i]=0;
+        }
+        while(s>0) {
+        	arr[s%10]++;
+        	s=s/10;
+        }
+        for(int i=0;i<10;i++) {
+        	System.out.println(i+"----"+arr[i]);
+        }
+	}
+
+}
